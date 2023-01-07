@@ -1,0 +1,33 @@
+{
+    "menu": [
+        {
+            "name": "功能1",
+            "index": 0,
+            "path": "/TND1000",
+            "icon": "mdi-monitor",
+            "hasChildren": true,
+            "childrens": [
+                {
+                    "name": "功能10",
+                    "index": 1,
+                    "path": "/TND1010",
+                    "icon": "mdi-cog-outline"
+                },
+                {
+                    "name": "功能11",
+                    "index": 2,
+                    "path": "/TND1011",
+                    "icon": "mdi-cog-outline"
+                }
+            ]
+        },
+        {
+            "name": "功能2",
+            "index": 10,
+            "path": "/TND1001",
+            "icon": "mdi-cog-outline",
+            "hasChildren": false,
+            "childrens": []
+        }
+    ]
+}
