@@ -28,3 +28,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 https://vuex.vuejs.org/zh/guide/state.html
 
 https://vuex.vuejs.org/zh/guide/
+
+
+## [vuelidate](https://vuelidate.js.org/)
+npm install vuelidate

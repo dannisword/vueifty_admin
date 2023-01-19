@@ -28,6 +28,27 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/components",
+    component: Layout,
+    redirect: "/components/form",
+    name: "form",
+    meta: { title: "form", icon: "el-icon-s-help" },
+    children: [
+      {
+        path: "/components/form",
+        name: "form",
+        component: () => import("@/views/components/Form"),
+        meta: { title: "form" },
+      },
+      {
+        path: "/components/table",
+        name: "form",
+        component: () => import("@/views/components/Table"),
+        meta: { title: "form" },
+      },
+    ],
+  },
   { path: "*", redirect: "/404", hidden: true },
 ];
 

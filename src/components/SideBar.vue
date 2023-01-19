@@ -7,19 +7,6 @@
           <v-list-item-subtitle> protal </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
-      <!-- menu 1
-      <v-list>
-        <v-list-item v-for="[icon, text] in links" :key="icon" link>
-          <v-list-item-icon>
-            <v-icon>{{ icon }}</v-icon>
-          </v-list-item-icon>
-
-          <v-list-item-content>
-            <v-list-item-title>{{ text }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-      -->
 
       <v-list>
         <div v-for="item in menus">
@@ -42,13 +29,17 @@
           >
             <template v-slot:activator>
               <v-list-item-content>
-                <v-list-item-title v-text="item.name"></v-list-item-title>
+                <v-list-item-title
+                  v-text="item.name"
+                  :to="item.path"
+                ></v-list-item-title>
               </v-list-item-content>
             </template>
 
             <v-list-item
               v-for="child in item.childrens"
               :key="child.index"
+              @click="onNav(child)"
               link
             >
               <v-list-item-content>
@@ -88,6 +79,9 @@ export default {
   methods: {
     onClick(val, children = false) {
       console.log(val);
+    },
+    onNav(menu) {
+      this.$router.push(menu.path);
     },
   },
 };

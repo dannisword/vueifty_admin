@@ -1,22 +1,22 @@
 {
     "menu": [
         {
-            "name": "功能1",
+            "name": "元件(components)",
             "index": 0,
-            "path": "/TND1000",
+            "path": "#",
             "icon": "mdi-monitor",
             "hasChildren": true,
             "childrens": [
                 {
-                    "name": "功能10",
+                    "name": "表單(Form)",
                     "index": 1,
-                    "path": "/TND1010",
+                    "path": "/components/form",
                     "icon": "mdi-cog-outline"
                 },
                 {
-                    "name": "功能11",
+                    "name": "表格(Table)",
                     "index": 2,
-                    "path": "/TND1011",
+                    "path": "/components/table",
                     "icon": "mdi-cog-outline"
                 }
             ]
@@ -24,7 +24,7 @@
         {
             "name": "功能2",
             "index": 10,
-            "path": "/TND1001",
+            "path": "#",
             "icon": "mdi-cog-outline",
             "hasChildren": false,
             "childrens": []
